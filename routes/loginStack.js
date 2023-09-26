@@ -1,4 +1,4 @@
-import { createStackNavigator } from "react-navigation-stack";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createAppContianer } from "react-navigation"
 
 
@@ -11,6 +11,6 @@ const screens = {
     }
 }
 
-const LoginStack = createStackNavigator(screens)
+const LoginStack = createNativeStackNavigator(screens)
 
-export default createAppContianer(LoginStack)
+export default LoginStack
